@@ -1,0 +1,29 @@
+/* 自定义样式：导航栏菜单右对齐 */
+
+/* 桌面端：将导航菜单整体移到右侧 */
+@media screen and (min-width: 1024px) {
+    .navbar-main .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar-main .navbar-brand {
+        flex-shrink: 0;
+    }
+
+    .navbar-main .navbar-menu {
+        justify-content: flex-end;
+        flex-grow: 1;
+    }
+
+    .navbar-main .navbar-start {
+        margin-right: 0;
+        margin-left: auto;
+        justify-content: flex-end;
+    }
+
+    .navbar-main .navbar-end {
+        margin-left: 0;
+    }
+}
