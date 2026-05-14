@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>后台管理系统界面框架 - Huyk Blog - PM小白的快落小屋</title><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#3273dc"><meta name="application-name" content="Huyk Blog - PM小白的快落小屋"><meta name="msapplication-TileImage" content="/img/Webicon.svg"><meta name="msapplication-TileColor" content="#3273dc"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Huyk Blog - PM小白的快落小屋"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="apple-touch-icon" sizes="192x192" href="/img/Webicon.svg"><meta name="description" content="小公司往往缺乏成熟的界面设计体系，本文整理了19个优秀的后台管理系统前端框架（包括vue-element-admin、Ant Design Pro、ArcoDesign、Semi Design等），涵盖Vue、React、Angular技术栈，供产品和开发借鉴参考。"><meta property="og:type" content="blog"><meta property="og:title" content="后台管理系统界面框架"><meta property="og:url" content="https://huykkk.github.io/2021/10/21/%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E6%9E%B6%E6%9E%84/"><meta property="og:site_name" content="Huyk Blog - PM小白的快落小屋"><meta property="og:description" content="小公司往往缺乏成熟的界面设计体系，本文整理了19个优秀的后台管理系统前端框架（包括vue-element-admin、Ant Design Pro、ArcoDesign、Semi Design等），涵盖Vue、React、Angular技术栈，供产品和开发借鉴参考。"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://huykkk.github.io/gallery/covers/web.png"><meta property="article:published_time" content="2021-10-20T23:21:10.000Z"><meta property="article:modified_time" content="2026-05-14T11:34:54.960Z"><meta property="article:author" content="Huyk"><meta property="article:tag" content="工具"><meta property="article:tag" content="前端"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://huykkk.github.io/gallery/covers/web.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://huykkk.github.io/2021/10/21/%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E6%9E%B6%E6%9E%84/"},"headline":"后台管理系统界面框架","image":["https://huykkk.github.io/gallery/covers/web.png"],"datePublished":"2021-10-20T23:21:10.000Z","dateModified":"2026-05-14T11:34:54.960Z","author":{"@type":"Person","name":"Huyk"},"publisher":{"@type":"Organization","name":"Huyk Blog - PM小白的快落小屋","logo":{"@type":"ImageObject","url":"https://huykkk.github.io/img/Melogo.svg"}},"description":"小公司往往缺乏成熟的界面设计体系，本文整理了19个优秀的后台管理系统前端框架（包括vue-element-admin、Ant Design Pro、ArcoDesign、Semi Design等），涵盖Vue、React、Angular技术栈，供产品和开发借鉴参考。"}</script><link rel="canonical" href="https://huykkk.github.io/2021/10/21/%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E6%9E%B6%E6%9E%84/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><script>var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?6829d7083d05f6f789e581f429aae853";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();</script><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.2"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/Melogo.svg" alt="Huyk Blog - PM小白的快落小屋" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">主页</a><a class="navbar-item" href="/archives">归档</a><a class="navbar-item" href="/categories">分类</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/about">关于</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/huykkk"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="/gallery/covers/web.png" alt="后台管理系统界面框架"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-10-20T23:21:10.000Z" title="2021/10/21 07:21:10">2021-10-21</time>发表</span><span class="level-item"><time dateTime="2026-05-14T11:34:54.960Z" title="2026/5/14 19:34:54">2026-05-14</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a><span> / </span><a class="link-muted" href="/categories/%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF/">前端</a></span><span class="level-item">11 分钟读完 (大约1661个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">后台管理系统界面框架</h1><div class="content"><p>小公司往往缺乏成熟的界面设计体系，本文整理了19个优秀的后台管理系统前端框架（包括vue-element-admin、Ant Design Pro、ArcoDesign、Semi Design等），涵盖Vue、React、Angular技术栈，供产品和开发借鉴参考。</p>
+<span id="more"></span>
+
+<p><strong>1. vue-element-admin</strong></p>
+<p>Github 地址：<a target="_blank" rel="noopener" href="https://github.com/PanJiaChen/vue-element-admin">https://github.com/PanJiaChen/vue-element-admin</a><br>Demo体验：<a target="_blank" rel="noopener" href="https://panjiachen.github.io/vue-element-admin/#/dashboard">https://panjiachen.github.io/vue-element-admin/#/dashboard</a></p>
+<p>一个基于 vue2.0 和 Eelement 的控制面板 UI 框架，这是使用vue技术栈开发的前端程序员的首选管理系统模板，模板以及非常的成熟了。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/huykkk/host_img/img/image-20211021171711600.png"></p>
+<p><strong>2.AdminLTE</strong></p>
+<p>Github 地址： <a target="_blank" rel="noopener" href="https://github.com/almasaeed2010/AdminLTE">https://github.com/almasaeed2010/AdminLTE</a><br>Demo体验：<a target="_blank" rel="noopener" href="https://adminlte.io/themes/AdminLTE/index2.html">https://adminlte.io/themes/AdminLTE/index2.html</a></p>
+<p>非常流行的基于 Bootstrap 3.x 的免费的后台 UI 框架，这是一个非常老牌的后台管理系统模板，每个页面都是单独的html网页。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/huykkk/host_img/img/image-20211021171835102.png"></p>
+<p><strong>3.ant-design-pro</strong></p>
+<p>Github 地址：<a target="_blank" rel="noopener" href="https://github.com/ant-design/ant-design-pro">https://github.com/ant-design/ant-design-pro</a><br>Demo体验：<a target="_blank" rel="noopener" href="https://preview.pro.ant.design/">https://preview.pro.ant.design/</a></p>
+<p>Ant Design Pro 是基于 Ant Design 和 umi 的封装的一整套企业级中后台前端&#x2F;设计解决方案，致力于在设计规范和基础组件的基础上，继续向上构建，提炼出典型模板&#x2F;业务组件&#x2F;配套设计资源，进一步提升企业级中后台产品设计研发过程中的『用户』和『设计者』的体验。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/huykkk/host_img/img/image-20211021172309699.png"></p>
+<p><strong>4.ng2-admin</strong></p>
+<p>Github 地址：<a target="_blank" rel="noopener" href="https://github.com/akveo/ngx-admin">https://github.com/akveo/ngx-admin</a><br>Demo体验：<a target="_blank" rel="noopener" href="https://www.akveo.com/ngx-admin/pages/dashboard">https://www.akveo.com/ngx-admin/pages/dashboard</a></p>
+<p>这是基于 Angular 2, Bootstrap 4 和 Webpack 的后台管理面板框架，如果使用angula框架进行前端可以试试这个后台。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/huykkk/host_img/img/image-20211021172522511.png"></p>
+<p><strong>5.Gentelella</strong></p>
+<p>Github 地址：<a target="_blank" rel="noopener" href="https://github.com/puikinsh/gentelella">https://github.com/puikinsh/gentelella</a><br>Demo体验：<a target="_blank" rel="noopener" href="https://colorlib.com/polygon/gentelella/index.html">https://colorlib.com/polygon/gentelella/index.html</a></p>
+<p>Gentelella 是一个可免费使用的 Bootstrap 管理界面模版，使用群体比较广泛。这个模版使用默认的 Bootstrap 3 的样式，还有一系列功能强大的 jQuery 插件和工具，可快速创建管理界面模版或者后台的 Dashboard。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/huykkk/host_img/img/image-20211021172603927.png"></p>
+<p><strong>6.iview-admin</strong></p>
+<p>Github 地址：<a target="_blank" rel="noopener" href="https://github.com/iview/iview-admin">https://github.com/iview/iview-admin</a><br>Demo体验：<a target="_blank" rel="noopener" href="https://admin.iviewui.com/home">https://admin.iviewui.com/home</a></p>
+<p>iView admin 是基于 iView 的 Vue 2.0 控制面板。搭配使用 iView UI 组件库形成的一套后台集成解决方案 。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/huykkk/host_img/img/image-20211021172701543.png"></p>
+<p><strong>7.blur-admin</strong></p>
+<p>Github 地址：<a target="_blank" rel="noopener" href="https://github.com/akveo/blur-admin">https://github.com/akveo/blur-admin</a><br>Demo体验：<a target="_blank" rel="noopener" href="https://www.akveo.com/blur-admin-mint/#/dashboard">https://www.akveo.com/blur-admin-mint/#/dashboard</a></p>
+<p>BlurAdmin 是一款使用 AngularJs + Bootstrap实现的单页管理端模版，视觉冲击极强的管理后台，各种动画效果。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/huykkk/host_img/img/image-20211021172750726.png"></p>
+<p><strong>8.vue-manage-system</strong></p>
+<p>地址：<a target="_blank" rel="noopener" href="https://github.com/lin-xin/vue-manage-system">https://github.com/lin-xin/vue-manage-system</a><br>Demo体验：<a target="_blank" rel="noopener" href="https://lin-xin.gitee.io/example/work/#/dashboard">https://lin-xin.gitee.io/example/work/#/dashboard</a></p>
+<p>vue-manage-system，一个基于 Vue.js 和 element-ui 的后台管理系统模板，挺喜欢这个界面的UI，简约清晰不累赘，多功能的后台框架模板，适用于绝大部分的后台管理系统开发。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/huykkk/host_img/img/image-20211021172835933.png"></p>
+<p><strong>9.material-dashboard</strong></p>
+<p>Github 地址： <a target="_blank" rel="noopener" href="https://github.com/creativetimofficial/material-dashboard">https://github.com/creativetimofficial/material-dashboard</a><br>Demo体验：<a target="_blank" rel="noopener" href="https://demos.creative-tim.com/material-dashboard/pages/dashboard">https://demos.creative-tim.com/material-dashboard/pages/dashboard</a></p>
+<p>基于 Bootstrap 4 和 Material 风格的控制面板。Material Dashboard 是一个开源的 Material Bootstrap Admin，其设计灵感来自谷歌的 Material Design 。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/huykkk/host_img/img/image-20211021173139084.png"></p>
+<p><strong>10.d2-admin</strong></p>
+<p>github地址：<a target="_blank" rel="noopener" href="https://github.com/d2-projects/d2-admin">https://github.com/d2-projects/d2-admin</a></p>
+<p>Demo体验：<a target="_blank" rel="noopener" href="https://d2.pub/d2-admin/preview/#/index">https://d2.pub/d2-admin/preview/#/index</a></p>
+<p>D2Admin 是一个完全 开源免费 的企业中后台产品前端集成方案，基于 vue.js 和 ElementUI 的管理系统前端解决方案 ，可以查看很多组件设计，产品可以进行参考。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/huykkk/host_img/img/image-20211021173855694.png"></p>
+<p><strong>11.vuestic-admin</strong></p>
+<p>Github：<a target="_blank" rel="noopener" href="https://github.com/epicmaxco/vuestic-admin">https://github.com/epicmaxco/vuestic-admin</a><br>Demo体验：<a target="_blank" rel="noopener" href="https://vuestic.epicmax.co/admin/dashboard">https://vuestic.epicmax.co/admin/dashboard</a></p>
+<p>vuestic-admin管理台仪表盘是一个响应式的仪表盘模板，采用Bootstrap 4和Vue.js构建。这个精美的管理台模板提供了自定义元素组件，如地图，聊天，个人资料卡，图标，进度条等，以及用于登录和注册的预建页面。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/huykkk/host_img/img/image-20211021173951806.png"></p>
+<p><strong>12.Vue vben admin</strong></p>
+<p>Github：<a target="_blank" rel="noopener" href="https://github.com/anncwb/vue-vben-admin">https://github.com/anncwb/vue-vben-admin</a><br>Demo体验：<a target="_blank" rel="noopener" href="https://vvbin.cn/doc-next">https://vvbin.cn/doc-next</a></p>
+<p>Vue Vben Admin 是一个基于 Vue3.0、Vite 、 Ant-Design-Vue 、TypeScript 构建的后台解决方案，为中大型项目开发提供开箱即用的UI框架，包括二次封装组件、utils、hooks、动态菜单、权限校验、按钮级别权限控制等功能。Vue Vben Admin 所使用的技术都是前端较新的技术栈，可以用来作为项目的启动模版，可以帮助快速搭建企业级中后台产品原型。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/huykkk/host_img/img/image-20211021174218516.png"></p>
+<p><strong>13.MyUI</strong></p>
+<p>Github：<a target="_blank" rel="noopener" href="https://gitee.com/newgateway/my">https://gitee.com/newgateway/my</a><br>Demo体验：<a target="_blank" rel="noopener" href="http://newgateway.gitee.io/my">http://newgateway.gitee.io/my</a></p>
+<p>新德汇出品的基于 Element UI 的中后台项目工程框架，基于 Vue + Element UI 构建的中后台工程框架，专业美观，内置组件丰富。有大量的大屏素材和数据可视化展示形式，产品可以看看。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/huykkk/host_img/img/image-20211021174744173.png"></p>
+<p><strong>14.Artiely Vue Admin</strong></p>
+<p>Github：<a target="_blank" rel="noopener" href="https://github.com/artiely/vue-admin">https://github.com/artiely/vue-admin</a></p>
+<p>Demo体验：<a target="_blank" rel="noopener" href="https://artiely.gitee.io/antd-admin">https://artiely.gitee.io/antd-admin</a></p>
+<p>基于蚂蚁金服Ant Design构建的高颜值开源管理后台UI框架，继承 Ant Design 专业美观的优点，支持PC&#x2F;手机&#x2F;平板的响应式布局的优秀后台管理系统 UI 框架。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/huykkk/host_img/img/image-20211021175039679.png"></p>
+<p><strong>15.HeyUI</strong></p>
+<p>Github：<a target="_blank" rel="noopener" href="https://github.com/heyui/heyui">https://github.com/heyui/heyui</a></p>
+<p>Demo体验：<a target="_blank" rel="noopener" href="https://admin.heyui.top/">https://admin.heyui.top</a></p>
+<p>自带admin框架、中后台前端UI框架的后起之秀，一款同样优秀的前端 UI 组件库，其基于HeyUI的 admin 框架也是开箱即用的优质框架。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/huykkk/host_img/img/image-20211021175527109.png"></p>
+<p><strong>16.View UI</strong></p>
+<p>Github：<a target="_blank" rel="noopener" href="https://github.com/view-design/ViewUI">https://github.com/view-design/ViewUI</a></p>
+<p>Demo体验：<a target="_blank" rel="noopener" href="https://adminpro.iviewui.com/dashboard/console">https://adminpro.iviewui.com/dashboard/console</a></p>
+<p>View UI ，即原先的 iView，一套基于 Vue 的开源 UI 组件库，主要用于 PC 界面的中后台产品。View UI 的初衷是提供高质量、功能丰富的基础组件，以及友好的 API，当然还有独树一帜的漂亮 UI。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/huykkk/host_img/img/image-20211021175732768.png"></p>
+<p><strong>17.EAdmin</strong></p>
+<p>Github：<a target="_blank" rel="noopener" href="https://github.com/suruibuas/eadmin">https://github.com/suruibuas/eadmin</a></p>
+<p>Demo体验：<a target="_blank" rel="noopener" href="http://demo.eadmin.com.cn/">http://demo.eadmin.com.cn/</a></p>
+<p>基于js和原生html的纯粹后台开源前端 UI 框架。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/huykkk/host_img/img/image-20211021180243302.png"></p>
+<hr>
+<p>下面是最新发现的新架构，可以借鉴学习</p>
+<p><strong>18.ArcoDesign</strong></p>
+<p>Github：<a target="_blank" rel="noopener" href="https://github.com/arco-design/arco-design">https://github.com/arco-design/arco-design</a></p>
+<p>Demo体验：<a target="_blank" rel="noopener" href="https://arco.design/pro/preview/dashboard/workplace">https://arco.design/pro/preview/dashboard/workplace</a></p>
+<p>字节跳动头条系企业级产品设计系统acro design开源，提供Axure、Sketch和Figma组件库。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/huykkk/host_img/img/arcodesign.png"></p>
+<p><strong>19.semidesign</strong></p>
+<p>Github：<a target="_blank" rel="noopener" href="https://github.com/DouyinFE/semi-design">https://github.com/DouyinFE/semi-design</a></p>
+<p>Demo体验：<a target="_blank" rel="noopener" href="https://semi.design/zh-CN/">https://semi.design/zh-CN/</a></p>
+<p>由字节跳动抖音前端与 UED 团队设计、开发并维护，包含设计语言、React 组件、主题等开箱即用的中后台解决方案，帮助设计师与开发者打造高质量产品。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/huykkk/host_img/img/Kapture.gif"></p>
+</div><div class="article-licensing box"><div class="licensing-title"><p>后台管理系统界面框架</p><p><a href="https://huykkk.github.io/2021/10/21/后台管理系统设计架构/">https://huykkk.github.io/2021/10/21/后台管理系统设计架构/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>Huyk</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2021-10-21</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2026-05-14</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/%E5%B7%A5%E5%85%B7/">工具</a><a class="link-muted mr-2" rel="tag" href="/tags/%E5%89%8D%E7%AB%AF/">前端</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2021/10/27/ERP%E7%B3%BB%E7%BB%9F%E4%B8%9A%E5%8A%A1%E6%80%BB%E7%BB%93/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">ERP系统业务总结（一）-前言</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2021/10/20/%E5%B7%A5%E4%BD%9C%E6%B5%81-%E5%AE%A1%E6%89%B9%E6%B5%81%E7%9A%84%E6%80%9D%E8%80%83/"><span class="level-item">工作流&amp;审批流的思考</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3></div></div></div><!--!--><div class="column column-right is-4-tablet is-4-desktop is-4-widescreen  order-3 is-sticky"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/profile-modified.png" alt="Huyk"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Huyk</p><p class="is-size-6 is-block">🖥 PM</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Wuhan,China</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">14</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">4</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">15</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://weibo.com/huykkk" target="_blank" rel="noopener">关注我</a></div></div></div><!--!--><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/%E5%AD%A6%E4%B9%A0/"><span class="level-start"><span class="level-item">学习</span></span><span class="level-end"><span class="level-item tag">14</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E5%AD%A6%E4%B9%A0/%E4%BA%A7%E5%93%81/"><span class="level-start"><span class="level-item">产品</span></span><span class="level-end"><span class="level-item tag">9</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF/"><span class="level-start"><span class="level-item">前端</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%AD%A6%E4%B9%A0/%E7%9F%A5%E8%AF%86/"><span class="level-start"><span class="level-item">知识</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li></ul></li></ul></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-04-27T23:21:10.000Z">2024-04-28</time></p><p class="title"><a href="/erp-product-analysis">ERP系统业务总结（二）-产品分析</a></p><p class="categories"><a href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a> / <a href="/categories/%E5%AD%A6%E4%B9%A0/%E4%BA%A7%E5%93%81/">产品</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-11-16T23:21:10.000Z">2021-11-17</time></p><p class="title"><a href="/2021/11/17/%E8%AF%BB%E3%80%8A%E9%87%91%E8%9E%8D%E7%9A%84%E8%B0%9C%E9%A2%98%E3%80%8B%E7%AC%94%E8%AE%B0/">读《金融的谜题》笔记</a></p><p class="categories"><a href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a> / <a href="/categories/%E5%AD%A6%E4%B9%A0/%E7%9F%A5%E8%AF%86/">知识</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-11-11T23:21:10.000Z">2021-11-12</time></p><p class="title"><a href="/2021/11/12/%E5%8E%9F%E5%9E%8B%E8%AE%BE%E8%AE%A1%E8%BD%AF%E4%BB%B6%E7%AC%94%E8%AE%B0-Figma/">原型设计软件笔记-Figma</a></p><p class="categories"><a href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a> / <a href="/categories/%E5%AD%A6%E4%B9%A0/%E4%BA%A7%E5%93%81/">产品</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-10-26T23:21:10.000Z">2021-10-27</time></p><p class="title"><a href="/2021/10/27/ERP%E7%B3%BB%E7%BB%9F%E4%B8%9A%E5%8A%A1%E6%80%BB%E7%BB%93/">ERP系统业务总结（一）-前言</a></p><p class="categories"><a href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a> / <a href="/categories/%E5%AD%A6%E4%B9%A0/%E4%BA%A7%E5%93%81/">产品</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-10-20T23:21:10.000Z">2021-10-21</time></p><p class="title"><a href="/2021/10/21/%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E6%9E%B6%E6%9E%84/">后台管理系统界面框架</a></p><p class="categories"><a href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a> / <a href="/categories/%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF/">前端</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2024/04/"><span class="level-start"><span class="level-item">四月 2024</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/11/"><span class="level-start"><span class="level-item">十一月 2021</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/10/"><span class="level-start"><span class="level-item">十月 2021</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/09/"><span class="level-start"><span class="level-item">九月 2021</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/B%E7%AB%AF%E4%BA%A7%E5%93%81/"><span class="tag">B端产品</span><span class="tag">6</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ERP/"><span class="tag">ERP</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Git/"><span class="tag">Git</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Markdown/"><span class="tag">Markdown</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E4%BA%A7%E5%93%81/"><span class="tag">产品</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%89%8D%E7%AB%AF/"><span class="tag">前端</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%95%86%E4%B8%9A/"><span class="tag">商业</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/"><span class="tag">工作流</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%B7%A5%E5%85%B7/"><span class="tag">工具</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%96%87%E6%A1%A3/"><span class="tag">文档</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%96%B9%E6%B3%95%E8%AE%BA/"><span class="tag">方法论</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%AE%A1%E7%90%86/"><span class="tag">管理</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E8%AE%BE%E8%AE%A1/"><span class="tag">设计</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"><span class="tag">读书笔记</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E9%87%91%E8%9E%8D/"><span class="tag">金融</span><span class="tag">1</span></a></div></div></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/Melogo.svg" alt="Huyk Blog - PM小白的快落小屋" height="28"></a><p class="is-size-7"><span>&copy; 2026 Huyk</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Hexo" href="https://hexo.io"><i class="fas fa-pencil-alt"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Icarus" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fas fa-paint-brush"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

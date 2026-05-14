@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>产品经理PRD文档规范 - Huyk Blog - PM小白的快落小屋</title><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#3273dc"><meta name="application-name" content="Huyk Blog - PM小白的快落小屋"><meta name="msapplication-TileImage" content="/img/Webicon.svg"><meta name="msapplication-TileColor" content="#3273dc"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Huyk Blog - PM小白的快落小屋"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="apple-touch-icon" sizes="192x192" href="/img/Webicon.svg"><meta name="description" content="从事产品近2年，对PRD文档有了新的理解。本文记录PRD文档的编写规范：从背景描述、写文档前的7个思考（解决什么问题、如何衡量、需要多少资源、复杂度、风险、创新、用户真实需求），到文档组成部分（修订记录、全局说明、项目背景、项目范围、业务流程、功能需求、非功能需求），帮助开发扫清障碍，提高开发效率。"><meta property="og:type" content="blog"><meta property="og:title" content="产品经理PRD文档规范"><meta property="og:url" content="https://huykkk.github.io/2021/10/15/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86PRD%E6%96%87%E6%A1%A3%E8%A7%84%E8%8C%83/"><meta property="og:site_name" content="Huyk Blog - PM小白的快落小屋"><meta property="og:description" content="从事产品近2年，对PRD文档有了新的理解。本文记录PRD文档的编写规范：从背景描述、写文档前的7个思考（解决什么问题、如何衡量、需要多少资源、复杂度、风险、创新、用户真实需求），到文档组成部分（修订记录、全局说明、项目背景、项目范围、业务流程、功能需求、非功能需求），帮助开发扫清障碍，提高开发效率。"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://huykkk.github.io/gallery/covers/PRD.png"><meta property="article:published_time" content="2021-10-14T23:21:10.000Z"><meta property="article:modified_time" content="2026-05-14T11:34:55.210Z"><meta property="article:author" content="Huyk"><meta property="article:tag" content="B端产品"><meta property="article:tag" content="文档"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://huykkk.github.io/gallery/covers/PRD.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://huykkk.github.io/2021/10/15/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86PRD%E6%96%87%E6%A1%A3%E8%A7%84%E8%8C%83/"},"headline":"产品经理PRD文档规范","image":["https://huykkk.github.io/gallery/covers/PRD.png"],"datePublished":"2021-10-14T23:21:10.000Z","dateModified":"2026-05-14T11:34:55.210Z","author":{"@type":"Person","name":"Huyk"},"publisher":{"@type":"Organization","name":"Huyk Blog - PM小白的快落小屋","logo":{"@type":"ImageObject","url":"https://huykkk.github.io/img/Melogo.svg"}},"description":"从事产品近2年，对PRD文档有了新的理解。本文记录PRD文档的编写规范：从背景描述、写文档前的7个思考（解决什么问题、如何衡量、需要多少资源、复杂度、风险、创新、用户真实需求），到文档组成部分（修订记录、全局说明、项目背景、项目范围、业务流程、功能需求、非功能需求），帮助开发扫清障碍，提高开发效率。"}</script><link rel="canonical" href="https://huykkk.github.io/2021/10/15/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86PRD%E6%96%87%E6%A1%A3%E8%A7%84%E8%8C%83/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><script>var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?6829d7083d05f6f789e581f429aae853";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();</script><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.2"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/Melogo.svg" alt="Huyk Blog - PM小白的快落小屋" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">主页</a><a class="navbar-item" href="/archives">归档</a><a class="navbar-item" href="/categories">分类</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/about">关于</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/huykkk"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="/gallery/covers/PRD.png" alt="产品经理PRD文档规范"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-10-14T23:21:10.000Z" title="2021/10/15 07:21:10">2021-10-15</time>发表</span><span class="level-item"><time dateTime="2026-05-14T11:34:55.210Z" title="2026/5/14 19:34:55">2026-05-14</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a><span> / </span><a class="link-muted" href="/categories/%E5%AD%A6%E4%B9%A0/%E4%BA%A7%E5%93%81/">产品</a></span><span class="level-item">19 分钟读完 (大约2840个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">产品经理PRD文档规范</h1><div class="content"><p>从事产品近2年，对PRD文档有了新的理解。本文记录PRD文档的编写规范：从背景描述、写文档前的7个思考（解决什么问题、如何衡量、需要多少资源、复杂度、风险、创新、用户真实需求），到文档组成部分（修订记录、全局说明、项目背景、项目范围、业务流程、功能需求、非功能需求），帮助开发扫清障碍，提高开发效率。</p>
+<span id="more"></span>
+
+<h3 id="1-PRD-背景描述"><a href="#1-PRD-背景描述" class="headerlink" title="1.PRD 背景描述"></a><strong>1.PRD 背景描述</strong></h3><p>PRD 中文名称为产品需求文档，文档的主要作用就是将产品从“概念化”阶段进入到“图纸化”阶段的最重要的一个文档。</p>
+<p>PRD 的主要使用对象有：研发、测试、交互设计师以及其他相关业务人员。</p>
+<ul>
+<li>研发可以根据 PRD 获悉整个产品的逻辑，作为编码的依据。</li>
+<li>测试可以根据 PRD 编写测试用例，为正式测试做准备。</li>
+<li>交互设计师可以根据 PRD 设计交互细节。</li>
+<li>业务人员可以通过 PRD 提交了解产品，为运营和推广做准备。</li>
+</ul>
+<p>PRD 是项目启动前，必须经过评审达成共识的最重要的文档，需要反复论证，尽可能的让市场、功能、研发达成平衡。</p>
+<h3 id="2-写-PRD-之前，思考几个问题"><a href="#2-写-PRD-之前，思考几个问题" class="headerlink" title="2.写 PRD 之前，思考几个问题"></a><strong>2.写 PRD 之前，思考几个问题</strong></h3><p><strong>1.解决了什么问题？</strong></p>
+<p>产品经理要发现用户的真实问题，并且反复论证这个问题是不是真的需求。这个功能可以为公司带来多大的价值，考虑这个功能的投入产出比。这个功能老板是怎样考虑的，是否满足用户需要。</p>
+<p>产品经理的正确设计思路如下：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/huykkk/host_img/img/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6.png" alt="RTPA"></p>
+<p>这是 PTRA 设计框架，是一种逆向的思维假设，我们需要使用这种思考技巧：假设初始需求都是错误的，我们应该怎样去分析这个需求。不要需求方一提出需求，就开始着手设计，多问几个为什么来了解真正的问题。</p>
+<p><strong>2.怎么衡量这些问题？</strong></p>
+<p>不同的相关人员，可以通过什么方式来检验问题解决后的用户反馈，需不需要使用数据埋点，有没有业务数据，</p>
+<p><strong>3.需要多少资源？</strong></p>
+<p>实现这个功能，需要多少资源、人力、物力来解决，可以进行评估吗？</p>
+<p><strong>4.会不会太复杂？</strong></p>
+<p>这个解决方案是否复杂，有没有性价比更高的可替代方案，能不能使用第三方插件来解决。会不会影响现有的产品业务。</p>
+<p><strong>5.有没有风险？</strong></p>
+<p>这个方案是否具有重大风险，是否违反相关政策。尤其是金融、游戏，国家监管比较严的，可能因为某个功能而导致下架，承担大量的不确定风险。</p>
+<p><strong>6.有新的创新吗？</strong></p>
+<p>可以有更创新的解决方案吗，可以分析竞品如何设计的。</p>
+<p><strong>7.用户具体需求？</strong></p>
+<p>需求是否由提交人所说的那样，有没有亲身体验用用户场景，熟悉相关领域的基本知识吗？</p>
+<p>动手写文档之前，一定要问问自己以上几个问题，想清楚的才可以动手，在任何一个位置没有想清楚都将面临不确定风险。</p>
+<h3 id="3-文档的组成部分"><a href="#3-文档的组成部分" class="headerlink" title="3.文档的组成部分"></a><strong>3.文档的组成部分</strong></h3><p><strong>1.修订记录</strong></p>
+<p>记录每次文档的更新时间、作者、修订内容，便于追溯历史变动。</p>
+<p><strong>2.全局说明</strong></p>
+<p>包括名词解释、统一异常处理、列表默认数据规则等。</p>
+<ul>
+<li>名词解释：每个行业都会有专业术语，需要提前与相关人员统一好专业术语的含义，并做好解释，以至于更好的沟通。</li>
+<li>列表默认数据规则：默认列表的排列方式，默认显示条数，超过多少页翻页。</li>
+<li>所有涉及全局的描述，可以罗列在这里。</li>
+</ul>
+<p><strong>3.项目背景</strong></p>
+<p>每个产品都有一套自己的价值模型。以 ERP 为例，针对用户的价值指标有生产数量、采购数量、待办事项等，针对于管理层的就是文件审批，数据分析、进度管理等量化指标；针对老板来说，有投资回报比、员工成本、净利润等价值指标，每一个需求都应该围绕着某个价值指标进行。</p>
+<p>背景应该从现状、方案、目标三个方面描述：</p>
+<p>现状：说明当前需求方遇到的问题，为什么通过系统来解决。</p>
+<p>方案：针对于解决方案来讲解。</p>
+<p>目标：达到的效果是什么，是否可以降本增效。</p>
+<p>通过项目的背景说明，让相关人员可以感受到工作价值。</p>
+<p><strong>4.项目范围</strong></p>
+<p>首先确定出所有产品角色，再针对每个角色，设计出相应的业务流程、功能模块，然后按照维度进行划分。这个步骤完成后就可以输出产品的系统架构图及系统的功能架构图。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/huykkk/host_img/img/%E6%99%BA%E6%85%A7%E5%B7%A5%E5%8E%821.0%E5%8A%9F%E8%83%BD%E6%A1%86%E6%9E%B6.png" alt="智慧工厂1.0功能框架"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/huykkk/host_img/img/%E7%B3%BB%E7%BB%9F%E5%8A%9F%E8%83%BD%E6%A1%86%E5%9B%BE.png" alt="经营平台功能框图"></p>
+<p>产品是由一个个的小功能组成而来，一个完整的功能具备了输入、处理、输出三大特征。从大到小依次是：系统&gt;功能模块&gt;功能，用户+功能组成了用例，用例是 PRD 文档中最重要的组成部分，所以合理的功能结构是写好 PRD 的关键。</p>
+<p><strong>5.业务流程</strong></p>
+<p>订流程。每个产品都有一个最主要的流程功能，是为了实现某一个主要功能而产生的产品。这个核心业务涉及到多个角色，这个步骤就是把各个角色和功能串起来。通过核心业务流程，阅读者可以了解产品的全貌，对产品有个宏观认识。</p>
+<p>这个步骤产出的由产品核心业务流程图，子系统核心业务流程图，活动图，状态机图，与外部系统交互可能还有时序图。</p>
+<p><strong>6.功能需求</strong></p>
+<p>这个部分是 PRD 的主要部分，前面简单说明的大体功能，这一部分就是各个功能进行详细描述。一个完整的用例包括：</p>
+<ul>
+<li>描述（非必须）</li>
+</ul>
+<p>功能的简要描述。</p>
+<ul>
+<li>前置条件</li>
+</ul>
+<p>操作这个功能，需要具备说明角色、权限或者状态。</p>
+<ul>
+<li>后置条件</li>
+</ul>
+<p>执行完成后触发什么数据，是否有关联或者变化。</p>
+<ul>
+<li>界面交互</li>
+</ul>
+<p>页面字段中是否为空、是否有默认值、是否有字数限制等。正确显示什么，错误显示什么？</p>
+<p><img src="https://cdn.jsdelivr.net/gh/huykkk/host_img/img/image-20211015145233779.png" alt="后台界面"></p>
+<p>界面元素</p>
+<p><img src="https://cdn.jsdelivr.net/gh/huykkk/host_img/img/image-20211015141747153.png" alt="需求说明"></p>
+<table>
+<thead>
+<tr>
+<th>字段(中文)</th>
+<th>字段类型及取值</th>
+<th>默认值</th>
+<th>必输</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><em>行程安排</em></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>行程单</td>
+<td>文本型字段，接口直接给值，只读</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>行程类型</td>
+<td>Many to One 型字段，允许下拉选择，允许创建</td>
+<td></td>
+<td>是</td>
+</tr>
+<tr>
+<td>创建时间</td>
+<td>Datetime 型字段，接口直接给值，只读</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>行程预算</td>
+<td>Float 型字段 查询时：接口直接给值，只读； 处理时：接口直接给值，可编辑；</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>目的地</td>
+<td>文本型字段 查询时：接口直接给值，只读； 处理时：接口直接给值，可编辑；</td>
+<td></td>
+<td>是</td>
+</tr>
+<tr>
+<td>申请人</td>
+<td>Many to One 型字段 查询时：接口直接给值，只读； 处理时：接口直接给值，允许下拉选择；</td>
+<td>当前用户</td>
+<td>是</td>
+</tr>
+<tr>
+<td>申请部门</td>
+<td>文本型字段，匹配申请人所在的部门接口直接给默认值，只读。</td>
+<td></td>
+<td>是</td>
+</tr>
+<tr>
+<td>随行人员</td>
+<td>Many to One 型字段 查询时：接口直接给值，只读； 处理时：接口直接给值，允许多选；</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>开始时间</td>
+<td>Datetime 型字段 查询时：接口直接给值，只读； 处理时：接口直接给值，允许编辑；</td>
+<td>当前时间</td>
+<td>是</td>
+</tr>
+<tr>
+<td>结束时间</td>
+<td>Datetime 型字段 查询时：接口直接给值，只读； 处理时：接口直接给值，允许编辑；</td>
+<td>当前时间</td>
+<td>是</td>
+</tr>
+<tr>
+<td><em>页签</em></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>事由</td>
+<td>文本型字段 查询时：接口直接给值，只读； 处理时：接口直接给值，允许编辑；</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>备注</td>
+<td>文本型字段 查询时：接口直接给值，只读； 处理时：接口直接给值，允许编辑；</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<ul>
+<li>业务流程</li>
+</ul>
+<p>当用户完成输入后，后端应该怎么样去验证，不同输入应该做什么处理，不同结果返回什么值，都是需要描述清除。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/huykkk/host_img/img/image-20211015142157998.png" alt="待办通知"></p>
+<ul>
+<li>异常和分支流程</li>
+</ul>
+<p>异常流程如网络错误、接口返回异常、服务器错误等。</p>
+<p>以登录为例，分支流程包括找回密码、密码登录，分支流程非必须，简单的分支流程可以直接通过主流程中体现。</p>
+<ul>
+<li>数据字典（非必须）</li>
+</ul>
+<p>数据字典，可以使开发更专心的写代码，少了文字描述的复杂性，一看就懂。产品只需要须知几种简单的类型即可。如 varchar 文本类型、datetime 时间类型、int 数字类型等，然后写出文本最大长度是否必填，不需要特别复杂。</p>
+<h3 id="4-非功能需求"><a href="#4-非功能需求" class="headerlink" title="4.非功能需求"></a><strong>4.非功能需求</strong></h3><p>数据需求，最常见的就是数据埋点，产品经理需要了解产品的功能使用情况和功能的欢迎程序，所以需要对功能使用进行统计，这个时候就需要梳理出需要埋点的功能表，告知开发，让开发在编码的过程中进行埋点。</p>
+<p>监控需求，需要监控某个接口或者某个服务，出现异常时及时通知相关人员进行处理。</p>
+<p>性能需求，需要多大的并发，都需要提前部署方案。</p>
+</div><div class="article-licensing box"><div class="licensing-title"><p>产品经理PRD文档规范</p><p><a href="https://huykkk.github.io/2021/10/15/产品经理PRD文档规范/">https://huykkk.github.io/2021/10/15/产品经理PRD文档规范/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>Huyk</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2021-10-15</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2026-05-14</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/B%E7%AB%AF%E4%BA%A7%E5%93%81/">B端产品</a><a class="link-muted mr-2" rel="tag" href="/tags/%E6%96%87%E6%A1%A3/">文档</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2021/10/20/%E5%B7%A5%E4%BD%9C%E6%B5%81-%E5%AE%A1%E6%89%B9%E6%B5%81%E7%9A%84%E6%80%9D%E8%80%83/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">工作流&amp;审批流的思考</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2021/09/22/%E4%B8%AA%E4%BA%BA%E6%80%BB%E7%BB%93B%E7%AB%AF%E4%BA%A7%E5%93%81%E5%B7%A5%E4%BD%9C%E6%B5%81/"><span class="level-item">个人总结B端产品工作流</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3></div></div></div><!--!--><div class="column column-right is-4-tablet is-4-desktop is-4-widescreen  order-3 is-sticky"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/profile-modified.png" alt="Huyk"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Huyk</p><p class="is-size-6 is-block">🖥 PM</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Wuhan,China</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">14</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">4</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">15</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://weibo.com/huykkk" target="_blank" rel="noopener">关注我</a></div></div></div><!--!--><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/%E5%AD%A6%E4%B9%A0/"><span class="level-start"><span class="level-item">学习</span></span><span class="level-end"><span class="level-item tag">14</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E5%AD%A6%E4%B9%A0/%E4%BA%A7%E5%93%81/"><span class="level-start"><span class="level-item">产品</span></span><span class="level-end"><span class="level-item tag">9</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF/"><span class="level-start"><span class="level-item">前端</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%AD%A6%E4%B9%A0/%E7%9F%A5%E8%AF%86/"><span class="level-start"><span class="level-item">知识</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li></ul></li></ul></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-04-27T23:21:10.000Z">2024-04-28</time></p><p class="title"><a href="/erp-product-analysis">ERP系统业务总结（二）-产品分析</a></p><p class="categories"><a href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a> / <a href="/categories/%E5%AD%A6%E4%B9%A0/%E4%BA%A7%E5%93%81/">产品</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-11-16T23:21:10.000Z">2021-11-17</time></p><p class="title"><a href="/2021/11/17/%E8%AF%BB%E3%80%8A%E9%87%91%E8%9E%8D%E7%9A%84%E8%B0%9C%E9%A2%98%E3%80%8B%E7%AC%94%E8%AE%B0/">读《金融的谜题》笔记</a></p><p class="categories"><a href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a> / <a href="/categories/%E5%AD%A6%E4%B9%A0/%E7%9F%A5%E8%AF%86/">知识</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-11-11T23:21:10.000Z">2021-11-12</time></p><p class="title"><a href="/2021/11/12/%E5%8E%9F%E5%9E%8B%E8%AE%BE%E8%AE%A1%E8%BD%AF%E4%BB%B6%E7%AC%94%E8%AE%B0-Figma/">原型设计软件笔记-Figma</a></p><p class="categories"><a href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a> / <a href="/categories/%E5%AD%A6%E4%B9%A0/%E4%BA%A7%E5%93%81/">产品</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-10-26T23:21:10.000Z">2021-10-27</time></p><p class="title"><a href="/2021/10/27/ERP%E7%B3%BB%E7%BB%9F%E4%B8%9A%E5%8A%A1%E6%80%BB%E7%BB%93/">ERP系统业务总结（一）-前言</a></p><p class="categories"><a href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a> / <a href="/categories/%E5%AD%A6%E4%B9%A0/%E4%BA%A7%E5%93%81/">产品</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-10-20T23:21:10.000Z">2021-10-21</time></p><p class="title"><a href="/2021/10/21/%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E6%9E%B6%E6%9E%84/">后台管理系统界面框架</a></p><p class="categories"><a href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a> / <a href="/categories/%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF/">前端</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2024/04/"><span class="level-start"><span class="level-item">四月 2024</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/11/"><span class="level-start"><span class="level-item">十一月 2021</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/10/"><span class="level-start"><span class="level-item">十月 2021</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/09/"><span class="level-start"><span class="level-item">九月 2021</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/B%E7%AB%AF%E4%BA%A7%E5%93%81/"><span class="tag">B端产品</span><span class="tag">6</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ERP/"><span class="tag">ERP</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Git/"><span class="tag">Git</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Markdown/"><span class="tag">Markdown</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E4%BA%A7%E5%93%81/"><span class="tag">产品</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%89%8D%E7%AB%AF/"><span class="tag">前端</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%95%86%E4%B8%9A/"><span class="tag">商业</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/"><span class="tag">工作流</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%B7%A5%E5%85%B7/"><span class="tag">工具</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%96%87%E6%A1%A3/"><span class="tag">文档</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%96%B9%E6%B3%95%E8%AE%BA/"><span class="tag">方法论</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%AE%A1%E7%90%86/"><span class="tag">管理</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E8%AE%BE%E8%AE%A1/"><span class="tag">设计</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"><span class="tag">读书笔记</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E9%87%91%E8%9E%8D/"><span class="tag">金融</span><span class="tag">1</span></a></div></div></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/Melogo.svg" alt="Huyk Blog - PM小白的快落小屋" height="28"></a><p class="is-size-7"><span>&copy; 2026 Huyk</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Hexo" href="https://hexo.io"><i class="fas fa-pencil-alt"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Icarus" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fas fa-paint-brush"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
