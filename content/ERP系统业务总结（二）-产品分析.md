@@ -1,0 +1,61 @@
+## **<font style="color:rgb(54, 54, 54);">ERP的产品价值</font>**
+### <font style="color:rgb(6, 6, 7);">商业目的：系统化管理的迫切需求</font>
+<font style="color:rgb(6, 6, 7);">企业的正常运营需要高效的资源周转，这不仅关系到成本控制，更是企业竞争力的体现。一个完善的系统平台能够支撑企业的整体业务，实现经营效率的显著提升。</font>
+
+### <font style="color:rgb(6, 6, 7);">商业价值：系统化管理带来的多重优势</font>
+1. 数据决策：实时数据报告可以让企业能够基于事实做出更明智的业务决策。
+2. 成本优化：<font style="color:rgb(6, 6, 7);">精简流程减少冗余，显著降低企业的运营开支。</font>
+3. <font style="color:rgb(6, 6, 7);">统一数据：强化的数据管理和财务控制机制，为企业稳健运营提供保障。</font>
+4. <font style="color:rgb(6, 6, 7);">规范流程：明确的业务流程可以使业务更加透明，操作更加规范。</font>
+
+### <font style="color:rgb(6, 6, 7);">实施智能化系统的策略要点</font>
+1. 精准定位需求：深入分析企业的运营需求，明确系统化管理的目标。了解业务方中“需求中的需求”。
+2. 技术适配性评估：选择与企业需求相匹配的技术解决方案。
+
+<font style="color:#8A8F8D;">题外话：之前呆过三家公司，有很鲜明的特点，第一家公司：选择了完全自主开发，这意味着从需求编写到开发都是从零开始。这种方法确保了产品与公司需求的完美契合，但开发周期较长，一个大型项目可能要花费数年。第二家公司：几乎贯彻造不如买的想法，所有的系统产品都是从买其他公司的系统软件开始，然后快速改造，最终落地的速度很快，但是也需要经常变更之前的底层逻辑，最终改的和重新做一个没什么区别。第三家公司：全公司之力强推低代码，一个项目启动的速度非常快，几个人就可以开始。但是最终维护的人员可能横跨好几个部门。这其中，开发速度的排序可能是：购买产品改造>低代码开发>完全开发。但是花费成本费用却也是正相关的：购买产品改造>低代码>完全开发。尽管成本与速度看似成正比，但可维护性这一关键因素不容忽视。完全自主开发的产品由于高度定制化，可维护性最高。相比之下，购买产品改造的可维护性较低，而低代码开发在项目变得复杂时，其可维护性可能面临很大的问题。</font>
+
+3. 流程再造：优化现有流程，消除不必要的步骤，提升流程的效率和效果。<font style="color:#8A8F8D;">题外话：有些线下的流程实在不允许直接搬到线上，但是由于业务方的强势，最终却不得不妥协，这种情况也时有发生，作为产品经理只能尽力去影响各方，并且给出一个平衡后的结果。</font>
+4. 持续培训与反馈：<font style="color:rgb(6, 6, 7);">对员工进行持续的系统操作培训，并建立反馈机制，不断优化系统。</font>
+
+## **<font style="color:rgb(54, 54, 54);">ERP中主要业务流程</font>**
+1. 线索流程图
+
+<img src="https://cdn.nlark.com/yuque/0/2024/png/22525103/1714309887593-c9b7b94a-fd14-42ce-a2fc-bb8d8190f2d6.png" width="577" title="" crop="0,0,1,1" id="udafa64e4" class="ne-image">
+
+2. 商机流程图
+
+<img src="https://cdn.nlark.com/yuque/0/2024/png/22525103/1714309912561-6f7f7f95-30b7-4c2b-a0b6-8cd7dff27704.png" width="577" title="" crop="0,0,1,1" id="ub8832e31" class="ne-image">
+
+3. 报价单流程图
+
+<img src="https://cdn.nlark.com/yuque/0/2024/png/22525103/1714309947330-26d299ae-6b6e-4681-bcfb-6222e6532ac3.png" width="577" title="" crop="0,0,1,1" id="ueca21ef6" class="ne-image">
+
+4. 采购流程图
+
+<img src="https://cdn.nlark.com/yuque/0/2024/png/22525103/1714309984836-0471d447-ae30-4bde-b063-552be91915dc.png" width="2600" title="" crop="0,0,1,1" id="u99075de2" class="ne-image">
+
+5. 库存流程图
+
+<img src="https://cdn.nlark.com/yuque/0/2024/png/22525103/1714310105253-76575075-1b9a-46b2-85fc-5f723e005e31.png" width="2208" title="" crop="0,0,1,1" id="u4e755063" class="ne-image">
+
+6. 仓库流程图
+
+<img src="https://cdn.nlark.com/yuque/0/2024/png/22525103/1714311367836-095f09c1-cf00-4c7b-8785-293c2902b2cd.png" width="1050" title="" crop="0,0,1,1" id="rFo1i" class="ne-image">
+
+7. 生产制造流程图
+
+<img src="https://cdn.nlark.com/yuque/0/2024/png/22525103/1714310228023-633a40ae-25b7-4a51-8db5-fc177c9cd522.png" width="3600" title="" crop="0,0,1,1" id="u9a5a1818" class="ne-image">
+
+8. 制造管理流程图
+
+<img src="https://cdn.nlark.com/yuque/0/2024/png/22525103/1714310175122-86e4d3a7-f2e4-4d30-8c66-f9a7cd556170.png" width="2306" title="" crop="0,0,1,1" id="u9dd0fbfe" class="ne-image">
+
+9. 设备质检流程
+
+<img src="https://cdn.nlark.com/yuque/0/2024/png/22525103/1714310475252-29de72ab-e5f9-4545-b4aa-a7463ec5f8f0.png" width="624" title="" crop="0,0,1,1" id="u09a51a1e" class="ne-image">
+
+10.任务系统时序图
+
+<img src="https://cdn.nlark.com/yuque/0/2024/png/22525103/1714311421856-47d53913-bc98-4581-a5ee-1d9cf7d0b7c9.png" width="1643" title="" crop="0,0,1,1" id="u46be0a69" class="ne-image">
+
+
