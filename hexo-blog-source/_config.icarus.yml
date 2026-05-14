@@ -1,0 +1,181 @@
+# Version of the configuration file
+version: 5.1.0
+# Icarus theme variant, can be "default" or "cyberpunk"
+variant: default
+# Path or URL to the website's logo
+logo: /img/Melogo.svg
+# Page metadata configurations
+head:
+    favicon: /img/favicon.svg
+    manifest:
+        name: Huyk Blog - PM小白的快落小屋
+        short_name: Huyk Blog
+        start_url: /
+        theme_color: '#3273dc'
+        background_color: '#f7f7f7'
+        display: standalone
+        icons:
+            -
+                src: /img/Webicon.svg
+                sizes: 192x192
+                type: image/svg+xml
+    open_graph:
+        title: 
+        type: blog
+        url: 
+        image: 
+        site_name: Huyk Blog - PM小白的快落小屋
+        author: Huyk
+        description: 
+        twitter_card: summary
+        twitter_id: 
+        twitter_site: 
+        google_plus: 
+        fb_admins: 
+        fb_app_id: 
+    structured_data:
+        title: 
+        description: 
+        url: 
+        author: Huyk
+        publisher: Huyk Blog - PM小白的快落小屋
+        publisher_logo: /img/Melogo.svg
+        image: 
+    meta:
+        - '<link rel="stylesheet" href="/css/custom.css">'
+    rss: 
+# Page top navigation bar configurations
+navbar:
+    menu:
+        主页: /
+        归档: /archives
+        分类: /categories
+        标签: /tags
+        关于: /about
+    links:
+        Download on GitHub:
+            icon: fab fa-github
+            url: https://github.com/huykkk
+# Page footer configurations
+footer:
+    copyright: ''
+    links:
+        Hexo:
+            icon: fas fa-pencil-alt
+            url: https://hexo.io
+        Icarus:
+            icon: fas fa-paint-brush
+            url: https://github.com/ppoffice/hexo-theme-icarus
+# Article related configurations
+article:
+    highlight:
+        theme: atom-one-light
+        clipboard: true
+        fold: unfolded
+    readtime: true
+    update_time: true
+    licenses:
+        Creative Commons:
+            icon: fab fa-creative-commons
+            url: https://creativecommons.org/
+        Attribution:
+            icon: fab fa-creative-commons-by
+            url: https://creativecommons.org/licenses/by/4.0/
+        Noncommercial:
+            icon: fab fa-creative-commons-nc
+            url: https://creativecommons.org/licenses/by-nc/4.0/
+# Search plugin configurations
+search:
+    type: insight
+    index_pages: true
+# Comment plugin configurations (disabled)
+comment:
+    type: ''
+# Donate button configurations (disabled)
+donates: []
+# Share plugin configurations (disabled)
+share:
+    type: ''
+# Sidebar configurations
+sidebar:
+    left:
+        sticky: false
+    right:
+        sticky: true
+# Sidebar widget configurations - matches live site
+widgets:
+    # Profile widget
+    -
+        position: right
+        type: profile
+        author: Huyk
+        author_title: '🖥 PM'
+        location: 'Wuhan,China'
+        avatar: /img/profile-modified.png
+        avatar_rounded: false
+        gravatar: 
+        follow_link: https://weibo.com/huykkk
+        social_links:
+    # TOC widget (article pages only)
+    -
+        position: right
+        type: toc
+        index: true
+        collapsed: true
+        depth: 3
+    # Categories
+    -
+        position: right
+        type: categories
+    # Recent posts
+    -
+        position: right
+        type: recent_posts
+    # Archives
+    -
+        position: right
+        type: archives
+    # Tags
+    -
+        position: right
+        type: tags
+        order_by: name
+        show_count: true
+# Plugin configurations
+plugins:
+    animejs: true
+    back_to_top: true
+    baidu_analytics:
+        tracking_id: '6829d7083d05f6f789e581f429aae853'
+    bing_webmaster:
+        tracking_id: 
+    busuanzi: false
+    cnzz:
+        id: 
+        web_id: 
+    cookie_consent:
+        type: info
+        theme: edgeless
+        static: false
+        position: bottom-left
+        policyLink: https://www.cookiesandyou.com/
+    gallery: true
+    google_analytics:
+        tracking_id: 
+    hotjar:
+        site_id: 
+    katex: false
+    mathjax: false
+    outdated_browser: false
+    pjax: true
+    progressbar: true
+    statcounter:
+        project: 
+        security: 
+    twitter_conversion_tracking:
+        pixel_id: 
+# CDN provider settings
+providers:
+    cdn: jsdelivr
+    fontcdn: google
+    iconcdn: fontawesome
