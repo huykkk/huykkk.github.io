@@ -88,14 +88,8 @@ article:
 search:
     type: insight
     index_pages: true
-# Comment plugin configurations (disabled)
-comment:
-    type: ''
 # Donate button configurations (disabled)
 donates: []
-# Share plugin configurations (disabled)
-share:
-    type: ''
 # Sidebar configurations
 sidebar:
     left:
