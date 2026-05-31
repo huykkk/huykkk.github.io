@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>以药房ERP为思考-理解主支辅异方法论 - Huyk Blog - PM小白的快落小屋</title><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#3273dc"><meta name="application-name" content="Huyk Blog - PM小白的快落小屋"><meta name="msapplication-TileImage" content="/img/Webicon.svg"><meta name="msapplication-TileColor" content="#3273dc"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Huyk Blog - PM小白的快落小屋"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="apple-touch-icon" sizes="192x192" href="/img/Webicon.svg"><meta name="description" content="以药房ERP和新零售ERP为例，拆解产品设计的主支辅异方法论：主线聚焦核心业务流程，支线覆盖灵活变化场景，辅线提升效率与体验，异常线预判风险与兜底。一个帮助产品经理在复杂业务中保持逻辑闭环的思考框架。"><meta property="og:type" content="blog"><meta property="og:title" content="以药房ERP为思考-理解主支辅异方法论"><meta property="og:url" content="https://huykkk.github.io/erp-main-branch-auxiliary-methodology/"><meta property="og:site_name" content="Huyk Blog - PM小白的快落小屋"><meta property="og:description" content="以药房ERP和新零售ERP为例，拆解产品设计的主支辅异方法论：主线聚焦核心业务流程，支线覆盖灵活变化场景，辅线提升效率与体验，异常线预判风险与兜底。一个帮助产品经理在复杂业务中保持逻辑闭环的思考框架。"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://huykkk.github.io/gallery/covers/erp.png"><meta property="article:published_time" content="2026-05-14T16:00:00.000Z"><meta property="article:modified_time" content="2026-05-15T10:45:45.730Z"><meta property="article:author" content="Huyk"><meta property="article:tag" content="B端产品"><meta property="article:tag" content="ERP"><meta property="article:tag" content="产品"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://huykkk.github.io/gallery/covers/erp.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://huykkk.github.io/erp-main-branch-auxiliary-methodology/"},"headline":"以药房ERP为思考-理解主支辅异方法论","image":["https://huykkk.github.io/gallery/covers/erp.png"],"datePublished":"2026-05-14T16:00:00.000Z","dateModified":"2026-05-15T10:45:45.730Z","author":{"@type":"Person","name":"Huyk"},"publisher":{"@type":"Organization","name":"Huyk Blog - PM小白的快落小屋","logo":{"@type":"ImageObject","url":"https://huykkk.github.io/img/Melogo.svg"}},"description":"以药房ERP和新零售ERP为例，拆解产品设计的主支辅异方法论：主线聚焦核心业务流程，支线覆盖灵活变化场景，辅线提升效率与体验，异常线预判风险与兜底。一个帮助产品经理在复杂业务中保持逻辑闭环的思考框架。"}</script><link rel="canonical" href="https://huykkk.github.io/erp-main-branch-auxiliary-methodology/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><script>var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?6829d7083d05f6f789e581f429aae853";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();</script><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.2"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/Melogo.svg" alt="Huyk Blog - PM小白的快落小屋" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">主页</a><a class="navbar-item" href="/archives">归档</a><a class="navbar-item" href="/categories">分类</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/about">关于</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/huykkk"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="/gallery/covers/erp.png" alt="以药房ERP为思考-理解主支辅异方法论"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2026-05-14T16:00:00.000Z" title="2026/5/15 00:00:00">2026-05-15</time>发表</span><span class="level-item"><time dateTime="2026-05-15T10:45:45.730Z" title="2026/5/15 18:45:45">2026-05-15</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a><span> / </span><a class="link-muted" href="/categories/%E5%AD%A6%E4%B9%A0/%E4%BA%A7%E5%93%81/">产品</a></span><span class="level-item">16 分钟读完 (大约2352个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">以药房ERP为思考-理解主支辅异方法论</h1><div class="content"><p>以药房ERP和新零售ERP为例，拆解产品设计的<strong>主支辅异方法论</strong>：主线聚焦核心业务流程，支线覆盖灵活变化场景，辅线提升效率与体验，异常线预判风险与兜底。一个帮助产品经理在复杂业务中保持逻辑闭环的思考框架。</p>
+<span id="more"></span>
+
+<p>在产品设计中，面对庞杂的业务需求，如何区分优先级、确保功能闭环、减少逻辑漏洞，是产品经理的核心能力。<strong>主支辅异方法论</strong>提供了一种结构化的思考方式——将系统功能分为<strong>主线、支线、辅线、异常线</strong>四个层次，分别管理。</p>
+<h2 id="一、主支辅异定义"><a href="#一、主支辅异定义" class="headerlink" title="一、主支辅异定义"></a>一、主支辅异定义</h2><p><strong>1. 主线（Main Line）</strong></p>
+<p>产品开发的核心路径，是产品的核心功能或服务，满足用户最基本需求的关键特性。主线的发展是产品成功的基础，也是产品迭代和优化的重点。</p>
+<p><strong>2. 支线（Branch Line）</strong></p>
+<p>产品中的次要功能或特性，是对主线功能的补充或扩展。支线功能可能不是每个用户都需要的，但对于特定用户群体或特定使用场景来说，它们是重要的。</p>
+<p><strong>3. 辅线（Auxiliary Line）</strong></p>
+<p>支持主线和支线功能实现的后台或辅助性功能，属于完善体验、锦上添花的作用。它们对于产品的整体性能和用户体验至关重要。</p>
+<p><strong>4. 异常线（Exception Line）</strong></p>
+<p>产品中比较少见的特殊情况，但也需要提前做好预案。这些情况虽然不常发生，但必须得到妥善处理，以确保产品的稳定性和用户的满意度。</p>
+<h2 id="二、通过主支辅异思考的意义"><a href="#二、通过主支辅异思考的意义" class="headerlink" title="二、通过主支辅异思考的意义"></a>二、通过主支辅异思考的意义</h2><p>日常产品设计中，通过主支辅异的方式思考功能是否达成闭环，可以有效减少系统的逻辑性问题。具体价值体现在以下几个方面：</p>
+<ol>
+<li><strong>明确产品方向</strong>：通过区分主线、支线、辅线和异常线，更清晰地定义产品的核心价值，确保团队专注于最关键的功能和特性开发</li>
+<li><strong>优化资源分配</strong>：合理分配资源，确保主线功能得到足够支持，同时也能分配适当的资源来开发和维护支线、辅线和异常线</li>
+<li><strong>提升用户体验</strong>：辅线功能的优化可以显著提升用户体验，增加产品吸引力，从而提高用户满意度和忠诚度</li>
+<li><strong>增强产品稳定性</strong>：通过异常线管理，预见并处理潜在的问题和风险，保证产品的稳定性和可靠性</li>
+<li><strong>促进产品差异化</strong>：在竞争激烈的市场中，通过主支辅异方法论探索和实施差异化的功能和服务，使产品脱颖而出</li>
+<li><strong>提高市场适应性</strong>：根据市场反馈和用户行为不断调整和优化产品，提高对市场变化的适应能力</li>
+<li><strong>支持产品迭代</strong>：通过不断的迭代和优化各条线，产品可以持续进化，更好地满足用户需求和市场变化</li>
+<li><strong>降低开发风险</strong>：通过细分产品功能并分别管理，降低开发过程中的风险，每个部分都可以独立测试和改进，不会影响整体产品的稳定性</li>
+</ol>
+<h2 id="三、应用案例：慢病管理平台"><a href="#三、应用案例：慢病管理平台" class="headerlink" title="三、应用案例：慢病管理平台"></a>三、应用案例：慢病管理平台</h2><p>假设我们正在开发一款慢病管理平台，可以通过以下方式实施主支辅异方法论：</p>
+<table>
+<thead>
+<tr>
+<th>层次</th>
+<th>功能</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>主线</strong></td>
+<td>数据跟踪（血糖、血压、体重）、个性化健康建议、药物提醒、健康计划</td>
+<td>系统的基石，满足核心需求</td>
+</tr>
+<tr>
+<td><strong>支线</strong></td>
+<td>远程咨询医生、加入慢病支持小组、访问健康教育资源</td>
+<td>虽非基础功能，但对全面健康管理有益</td>
+</tr>
+<tr>
+<td><strong>辅线</strong></td>
+<td>投诉流程、在线客服、就医指引</td>
+<td>虽非直接医疗功能，但对用户体验和平台运营至关重要</td>
+</tr>
+<tr>
+<td><strong>异常线</strong></td>
+<td>便民服务处理、病案邮寄、用户无法到场预案</td>
+<td>需提前准备应急预案</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>⚠️ 注意：常见的”逆向流程”（如订单取消、订单退货、订单售后）其实不是异常流程，而是<strong>分支流程</strong>。不过在日常沟通中常常用”异常流程”或”其他流程”来表达。</p>
+</blockquote>
+<h2 id="四、”新零售型ERP”系统的主支辅异流程"><a href="#四、”新零售型ERP”系统的主支辅异流程" class="headerlink" title="四、”新零售型ERP”系统的主支辅异流程"></a>四、”新零售型ERP”系统的主支辅异流程</h2><p>以新零售型ERP为实际案例，拆解各层次的具体内容：</p>
+<p><strong>1. 主线（Main Line）</strong></p>
+<p>订单销售和配货：将订单销售给2B客户，并将订单配货给门店。这是最核心的业务流程，确保客户订单得到满足，并保证门店库存充足。</p>
+<p><strong>2. 支线（Branch Line）</strong></p>
+<p>订单变更和退货：处理标准销售订单的退货、门店配货的退货、订单取消以及销售价格的调整。这些流程虽然不是每笔订单都会经历，但对于灵活应对客户需求和库存管理至关重要。</p>
+<p><strong>3. 辅线（Auxiliary Line）</strong></p>
+<p>效率和便捷性提升：批量导入订单、批量更新订单、订单复制、订单导出和打印订单明细。这些功能旨在提高工作效率，减少手动操作，优化用户体验。</p>
+<p><strong>4. 异常线（Exception Line）</strong></p>
+<p>问题解决和风险管理：处理库存占用失败、订单推送仓库失败、仓库回传数据无法接收、缺量出库等问题。这些异常情况虽然不常发生，但需要提前准备好解决方案，以减少对业务的影响。</p>
+<h2 id="五、ERP-主线流程思考"><a href="#五、ERP-主线流程思考" class="headerlink" title="五、ERP 主线流程思考"></a>五、ERP 主线流程思考</h2><p>ERP主线流程围绕三个核心业务路径展开：</p>
+<ol>
+<li><strong>标准销售（批发&#x2F;2B）</strong>：给外部客户，一般在ERP上手动创建或导入订单，推送到下游WMS系统中，让仓库发货给2B客户</li>
+<li><strong>配货给门店</strong>：在ERP上手动创建或导入订单，推送到下游WMS系统中，让仓库发货给门店；仓库发出后，同时在门店POS运营端生成对应的采购入库单</li>
+<li><strong>在线渠道下单</strong>：拉取在线渠道订单到ERP中，再推送到下游WMS中，让仓库发货给2C消费者</li>
+</ol>
+<h2 id="六、ERP-支线流程"><a href="#六、ERP-支线流程" class="headerlink" title="六、ERP 支线流程"></a>六、ERP 支线流程</h2><p>支线流程主要关注<strong>逆向流程和差异流程</strong>，这是产品经理需要重点关注的方向：</p>
+<ul>
+<li><strong>供应商三流</strong>：物流、资金流、信息流</li>
+<li><strong>供应商五流</strong>：物流、资金流、信息流、逆向物流、逆向资金流</li>
+</ul>
+<p>对于产品经理来说，要多关注逆向流程和差异流程的习惯，这些都是很重要的支线流程或支线业务。除了销售退货、门店配货退货，还有订单取消、销售价格的配置和管理等，都可以算作是分支流程，需求梳理中需要将对应的场景和待办事项都梳理完整。</p>
+<h2 id="七、ERP-辅助流程"><a href="#七、ERP-辅助流程" class="headerlink" title="七、ERP 辅助流程"></a>七、ERP 辅助流程</h2><p>辅助流程是”锦上添花”的诉求和相关业务流程——<strong>没有这些功能业务也能跑起来，只是效率不够高、容易出错</strong>。这一部分需求可以穿插在日常迭代中逐步完善，不一定要一次性全部满足：</p>
+<ol>
+<li>批量导入订单</li>
+<li>批量导出订单，导出模板设置</li>
+<li>批量更新订单</li>
+<li>订单单个复制</li>
+<li>打印订单发货清单，打印单据信息</li>
+</ol>
+<h2 id="八、ERP-异常流程"><a href="#八、ERP-异常流程" class="headerlink" title="八、ERP 异常流程"></a>八、ERP 异常流程</h2><p>异常流程分为可预见和不可预见两类。<strong>能预见的情况应提前设计好对应方案</strong>，不可预见的情况常在评审或开发过程中发现，再由产品经理根据实际情况输出对应的异常流程解决方案：</p>
+<ol>
+<li>库存不足或占用失败时如何处理？</li>
+<li>仓库缺量出库如何处理？是否支持缺量回传？</li>
+<li>订单推送仓库失败如何处理？接口重试几次？</li>
+<li>基础数据没有拉取或推送成功如何处理？</li>
+</ol>
+<hr>
+<p>主支辅异方法论的核心价值在于：<strong>让产品经理在复杂的业务需求面前保持清晰的思维层次</strong>，不被细节淹没，也不遗漏关键场景。无论是ERP系统、慢病管理平台，还是其他B端产品，都可以借助这个框架来梳理功能优先级、确保逻辑闭环。</p>
+</div><div class="article-licensing box"><div class="licensing-title"><p>以药房ERP为思考-理解主支辅异方法论</p><p><a href="https://huykkk.github.io/erp-main-branch-auxiliary-methodology/">https://huykkk.github.io/erp-main-branch-auxiliary-methodology/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>Huyk</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2026-05-15</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2026-05-15</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/B%E7%AB%AF%E4%BA%A7%E5%93%81/">B端产品</a><a class="link-muted mr-2" rel="tag" href="/tags/ERP/">ERP</a><a class="link-muted mr-2" rel="tag" href="/tags/%E4%BA%A7%E5%93%81/">产品</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/medical-product-driven-upgrade/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">产品力驱动医疗升级：如何让医院管理和患者体验双赢？</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/patient-management-user-research/"><span class="level-item">关于患者管理项目用户调研</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3></div></div></div><!--!--><div class="column column-right is-4-tablet is-4-desktop is-4-widescreen  order-3 is-sticky"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/profile-modified.png" alt="Huyk"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Huyk</p><p class="is-size-6 is-block">🖥 PM</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Wuhan,China</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">17</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">4</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">12</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://weibo.com/huykkk" target="_blank" rel="noopener">关注我</a></div></div></div><!--!--><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/%E5%AD%A6%E4%B9%A0/"><span class="level-start"><span class="level-item">学习</span></span><span class="level-end"><span class="level-item tag">17</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E5%AD%A6%E4%B9%A0/%E4%BA%A7%E5%93%81/"><span class="level-start"><span class="level-item">产品</span></span><span class="level-end"><span class="level-item tag">12</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF/"><span class="level-start"><span class="level-item">前端</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%AD%A6%E4%B9%A0/%E7%9F%A5%E8%AF%86/"><span class="level-start"><span class="level-item">知识</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li></ul></li></ul></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-05-31T10:00:00.000Z">2026-05-31</time></p><p class="title"><a href="/medical-product-driven-upgrade/">产品力驱动医疗升级：如何让医院管理和患者体验双赢？</a></p><p class="categories"><a href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a> / <a href="/categories/%E5%AD%A6%E4%B9%A0/%E4%BA%A7%E5%93%81/">产品</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-05-14T16:00:00.000Z">2026-05-15</time></p><p class="title"><a href="/erp-main-branch-auxiliary-methodology/">以药房ERP为思考-理解主支辅异方法论</a></p><p class="categories"><a href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a> / <a href="/categories/%E5%AD%A6%E4%B9%A0/%E4%BA%A7%E5%93%81/">产品</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-05-14T16:00:00.000Z">2026-05-15</time></p><p class="title"><a href="/patient-management-user-research/">关于患者管理项目用户调研</a></p><p class="categories"><a href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a> / <a href="/categories/%E5%AD%A6%E4%B9%A0/%E4%BA%A7%E5%93%81/">产品</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-04-27T23:21:10.000Z">2024-04-28</time></p><p class="title"><a href="/erp-product-analysis/">ERP系统业务总结（二）-产品分析</a></p><p class="categories"><a href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a> / <a href="/categories/%E5%AD%A6%E4%B9%A0/%E4%BA%A7%E5%93%81/">产品</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-11-16T23:21:10.000Z">2021-11-17</time></p><p class="title"><a href="/2021/11/17/%E8%AF%BB%E3%80%8A%E9%87%91%E8%9E%8D%E7%9A%84%E8%B0%9C%E9%A2%98%E3%80%8B%E7%AC%94%E8%AE%B0/">读《金融的谜题》笔记</a></p><p class="categories"><a href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a> / <a href="/categories/%E5%AD%A6%E4%B9%A0/%E7%9F%A5%E8%AF%86/">知识</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2026/05/"><span class="level-start"><span class="level-item">五月 2026</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2024/04/"><span class="level-start"><span class="level-item">四月 2024</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/11/"><span class="level-start"><span class="level-item">十一月 2021</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/10/"><span class="level-start"><span class="level-item">十月 2021</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/09/"><span class="level-start"><span class="level-item">九月 2021</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/B%E7%AB%AF%E4%BA%A7%E5%93%81/"><span class="tag">B端产品</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ERP/"><span class="tag">ERP</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/markdown/"><span class="tag">markdown</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E4%BA%A7%E5%93%81/"><span class="tag">产品</span><span class="tag">7</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1/"><span class="tag">产品设计</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%89%8D%E7%AB%AF/"><span class="tag">前端</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%8C%BB%E7%96%97/"><span class="tag">医疗</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%8E%9F%E5%9E%8B/"><span class="tag">原型</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%94%A8%E6%88%B7%E8%B0%83%E7%A0%94/"><span class="tag">用户调研</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%AC%94%E8%AE%B0/"><span class="tag">笔记</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E8%AE%BE%E8%AE%A1/"><span class="tag">设计</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E9%87%91%E8%9E%8D/"><span class="tag">金融</span><span class="tag">2</span></a></div></div></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/Melogo.svg" alt="Huyk Blog - PM小白的快落小屋" height="28"></a><p class="is-size-7"><span>&copy; 2026 Huyk</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Hexo" href="https://hexo.io"><i class="fas fa-pencil-alt"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Icarus" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fas fa-paint-brush"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

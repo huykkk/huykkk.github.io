@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>关于患者管理项目用户调研 - Huyk Blog - PM小白的快落小屋</title><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#3273dc"><meta name="application-name" content="Huyk Blog - PM小白的快落小屋"><meta name="msapplication-TileImage" content="/img/Webicon.svg"><meta name="msapplication-TileColor" content="#3273dc"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Huyk Blog - PM小白的快落小屋"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="apple-touch-icon" sizes="192x192" href="/img/Webicon.svg"><meta name="description" content="基于苏州大学附属第一医院实地访谈的患者管理项目调研报告：三甲医院医生对互联网产品的抗拒心理、隐私顾虑与精力瓶颈，以及如何通过简化流程和医助角色来实现无感化切入的迭代策略。"><meta property="og:type" content="blog"><meta property="og:title" content="关于患者管理项目用户调研"><meta property="og:url" content="https://huykkk.github.io/patient-management-user-research/"><meta property="og:site_name" content="Huyk Blog - PM小白的快落小屋"><meta property="og:description" content="基于苏州大学附属第一医院实地访谈的患者管理项目调研报告：三甲医院医生对互联网产品的抗拒心理、隐私顾虑与精力瓶颈，以及如何通过简化流程和医助角色来实现无感化切入的迭代策略。"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://huykkk.github.io/gallery/covers/PRODUCT.jpeg"><meta property="article:published_time" content="2026-05-14T16:00:00.000Z"><meta property="article:modified_time" content="2026-05-19T03:36:15.110Z"><meta property="article:author" content="Huyk"><meta property="article:tag" content="B端产品"><meta property="article:tag" content="医疗"><meta property="article:tag" content="用户调研"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://huykkk.github.io/gallery/covers/PRODUCT.jpeg"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://huykkk.github.io/patient-management-user-research/"},"headline":"关于患者管理项目用户调研","image":[],"datePublished":"2026-05-14T16:00:00.000Z","dateModified":"2026-05-19T03:36:15.110Z","author":{"@type":"Person","name":"Huyk"},"publisher":{"@type":"Organization","name":"Huyk Blog - PM小白的快落小屋","logo":{"@type":"ImageObject","url":"https://huykkk.github.io/img/Melogo.svg"}},"description":"基于苏州大学附属第一医院实地访谈的患者管理项目调研报告：三甲医院医生对互联网产品的抗拒心理、隐私顾虑与精力瓶颈，以及如何通过简化流程和医助角色来实现无感化切入的迭代策略。"}</script><link rel="canonical" href="https://huykkk.github.io/patient-management-user-research/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><script>var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?6829d7083d05f6f789e581f429aae853";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();</script><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.2"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/Melogo.svg" alt="Huyk Blog - PM小白的快落小屋" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">主页</a><a class="navbar-item" href="/archives">归档</a><a class="navbar-item" href="/categories">分类</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/about">关于</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/huykkk"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="/gallery/covers/PRODUCT.jpeg" alt="关于患者管理项目用户调研"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2026-05-14T16:00:00.000Z" title="2026/5/15 00:00:00">2026-05-15</time>发表</span><span class="level-item"><time dateTime="2026-05-19T03:36:15.110Z" title="2026/5/19 11:36:15">2026-05-19</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a><span> / </span><a class="link-muted" href="/categories/%E5%AD%A6%E4%B9%A0/%E4%BA%A7%E5%93%81/">产品</a></span><span class="level-item">13 分钟读完 (大约1963个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">关于患者管理项目用户调研</h1><div class="content"><p>基于苏州大学附属第一医院实地访谈的患者管理项目调研报告：三甲医院医生对互联网产品的<strong>抗拒心理</strong>、<strong>隐私顾虑</strong>与<strong>精力瓶颈</strong>，以及如何通过简化流程和医助角色来实现无感化切入的迭代策略。</p>
+<span id="more"></span>
+
+<h2 id="一、访谈背景"><a href="#一、访谈背景" class="headerlink" title="一、访谈背景"></a>一、访谈背景</h2><p>新患者管理项目处于立项阶段，前期需要对不同用户进行调研，获取一线使用人员的反馈。通过各种渠道收集反馈来聚拢问题，并针对性地进行用户访谈来验证问题，了解用户的具体体验，再用量化数据佐证，最终得出真实需求，通过归纳、讨论、分析来转化成迭代目标。</p>
+<h2 id="二、访谈项目工作回顾"><a href="#二、访谈项目工作回顾" class="headerlink" title="二、访谈项目工作回顾"></a>二、访谈项目工作回顾</h2><h3 id="2-1-工作时间段"><a href="#2-1-工作时间段" class="headerlink" title="2.1 工作时间段"></a>2.1 工作时间段</h3><p>2022年7月7日当天，全组人员共计3人，设计访谈内容8条，扩展问题6条，收集访谈结果2份。结合当天实际情况，与代表一同前往**苏州大学附属第一医院（新院）<strong>和</strong>苏州大学附属第一医院（主院）**两地进行实地访谈。</p>
+<h3 id="2-2-参与人员与分工"><a href="#2-2-参与人员与分工" class="headerlink" title="2.2 参与人员与分工"></a>2.2 参与人员与分工</h3><table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>负责人</th>
+<th>工作内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>前期</td>
+<td>全员</td>
+<td>针对卡柠患者管理中总结的迭代策略及运营策略，组内整理用户研究方向，形成访谈提纲</td>
+</tr>
+<tr>
+<td>过程</td>
+<td>胡寅恺</td>
+<td>对各医院医生使用产品进行调研，围绕互联网产品及管理工具展开访谈，根据情况进行扩展和深入</td>
+</tr>
+<tr>
+<td>总结</td>
+<td>全员</td>
+<td>根据当日访谈情况，对访谈结果进行分析和提炼，形成需求清单和访谈报告</td>
+</tr>
+</tbody></table>
+<h3 id="2-3-访谈方式"><a href="#2-3-访谈方式" class="headerlink" title="2.3 访谈方式"></a>2.3 访谈方式</h3><p>本次用户访谈采用<strong>现场访谈</strong>方式。因数据量样本偏低，无法保证访谈的普适性，但可以归纳大部分医生的核心观点。</p>
+<h3 id="2-4-提纲概述"><a href="#2-4-提纲概述" class="headerlink" title="2.4 提纲概述"></a>2.4 提纲概述</h3><p>本次访谈问题大致分为：<strong>事实性问题、行为性问题、倾向性问题、主观性问题、建设性问题</strong>。</p>
+<ol>
+<li>咱们这边患者复诊率大概多少？</li>
+<li>如果给您一个患者管理工具，且有专属助理提供服务，您希望具备哪些功能？</li>
+<li>医生对患者管理的侧重点在哪？异常指标、健康数据的收集？</li>
+<li>医生对患者的管理习惯，是使用患者疾病信息、治疗线数，还是其他方式？</li>
+<li>目前医院对于患者服务有哪些考核指标？</li>
+<li>有用过随访的管理工具吗？</li>
+<li>如果代表协助做患者管理，提醒患者复诊和跟进指标，您觉得可行吗？</li>
+<li>现在有相关的科研课题随访吗？是怎么落地的？</li>
+</ol>
+<h2 id="三、访谈内容整理"><a href="#三、访谈内容整理" class="headerlink" title="三、访谈内容整理"></a>三、访谈内容整理</h2><h3 id="（1）医院复诊率与品牌效应"><a href="#（1）医院复诊率与品牌效应" class="headerlink" title="（1）医院复诊率与品牌效应"></a>（1）医院复诊率与品牌效应</h3><p>医院复诊率高，目前<strong>没有通过后期吸引的方式去拉患者</strong>，一般通过医院的招牌去吸引患者。在血液科中，苏大附一的科室专业等级较高，会有其他省份的患者前来问诊，后续治疗也会对此医生进行问询。<strong>医院的特点会影响医生对于互联网产品的参与度</strong>。</p>
+<h3 id="（2）医生对干扰的抗拒"><a href="#（2）医生对干扰的抗拒" class="headerlink" title="（2）医生对干扰的抗拒"></a>（2）医生对干扰的抗拒</h3><p>目前医生<strong>不希望有其他项目来干扰自己的问诊行为</strong>。好的三甲医院可以利用自己的招牌吸引患者，所以对于利用患者管理来提高患者复诊率的方式嗤之以鼻。并且医院科室中<strong>缺少专门运营患者管理的人员</strong>，也不放心直接让厂家参与患者管理。</p>
+<h3 id="（3）精力有限，放弃线上患者"><a href="#（3）精力有限，放弃线上患者" class="headerlink" title="（3）精力有限，放弃线上患者"></a>（3）精力有限，放弃线上患者</h3><p>由于上述原因，医生不需要有其他事情来干扰问诊行为，而且<strong>精力有限，无法照顾到所有患者</strong>，只能放弃线上患者，专注服务来自面诊的患者。并且因为在线问诊的问题，患者描述病情非常不准确，无法准确判断当前患者状况，也不敢轻易给出建议，所以<strong>很难参与到线上管理的任务中来</strong>。</p>
+<h3 id="（4）管理习惯：按病情轻重缓急"><a href="#（4）管理习惯：按病情轻重缓急" class="headerlink" title="（4）管理习惯：按病情轻重缓急"></a>（4）管理习惯：按病情轻重缓急</h3><p>医生对患者的管理习惯，<strong>通过患者病情进行考虑</strong>。在医院中医生会让患者进行一系列检查，才能具体判断出患者的状况。需要根据患者的轻重缓急，再针对病情进行酌情分析。患者的基本信息、治疗线数<strong>不在医生特别关注的项目中</strong>。</p>
+<h3 id="（5）公立三甲医院很少考核医生服务"><a href="#（5）公立三甲医院很少考核医生服务" class="headerlink" title="（5）公立三甲医院很少考核医生服务"></a>（5）公立三甲医院很少考核医生服务</h3><p>公立三甲医院中<strong>很少会对医生服务进行考核</strong>。</p>
+<h3 id="（6）无随访环节，患者自行复诊"><a href="#（6）无随访环节，患者自行复诊" class="headerlink" title="（6）无随访环节，患者自行复诊"></a>（6）无随访环节，患者自行复诊</h3><p>公司三甲医院<strong>没有随访环节</strong>，一般会要求患者自行复诊。如果患者对自己的身体状况不在意，医生也不会特意去询问处理。</p>
+<h3 id="（7）抵触厂家过深参与"><a href="#（7）抵触厂家过深参与" class="headerlink" title="（7）抵触厂家过深参与"></a>（7）抵触厂家过深参与</h3><p>医生方面<strong>比较抵触厂家过深参与到与患者的沟通中</strong>，并且希望厂家不要直接联系患者，参与到与患者的接触中。因为接触患者会引起医生的强烈反感，<strong>导致项目合作失败</strong>。</p>
+<h3 id="（8）无科研课题随访项目"><a href="#（8）无科研课题随访项目" class="headerlink" title="（8）无科研课题随访项目"></a>（8）无科研课题随访项目</h3><p>目前所咨询的两位医生均是科室的主任医师，<strong>医院没有下达科研课题相关的项目</strong>。</p>
+<h2 id="四、结论"><a href="#四、结论" class="headerlink" title="四、结论"></a>四、结论</h2><p>目前好的医院的医生因为精力有限，白天任务繁杂，所以对互联网产品会有很大的抗拒心理，主要担心以下两个方面：</p>
+<h3 id="1-风险"><a href="#1-风险" class="headerlink" title="1. 风险"></a>1. 风险</h3><p>由于公立三甲医院评价较高等特点，患者络绎不绝。白天需要处理问诊、查床、会诊等任务，晚上需要生活，所以对于拉患者进行管理非常抗拒。患者管理意味着需要花费大量时间进行沟通，<strong>一旦患者出现紧急情况而没有及时回复，会对医生产生巨大的影响</strong>。医生没有办法一直在网络上在线，只有把精力用来处理到医院进行面诊或者住院的患者病情上。</p>
+<h3 id="2-隐私"><a href="#2-隐私" class="headerlink" title="2. 隐私"></a>2. 隐私</h3><p>医生<strong>不能同意把大量的用户隐私上传到厂家服务器中</strong>，会有很大的安全隐患。一旦出现信息泄露或者医院以及政府查到相关问题，<strong>会对医生的职业生涯造成巨大损失</strong>。</p>
+<h2 id="五、迭代建议"><a href="#五、迭代建议" class="headerlink" title="五、迭代建议"></a>五、迭代建议</h2><p>基于以上两条原因，目前建议：</p>
+<ol>
+<li><strong>简化医生端注册流程</strong>：通过数字营销的医生进行数据迁移，让医生<strong>无感进入</strong>到患者管理系统中</li>
+<li><strong>提供巨大吸引力</strong>：可以抵消医生的风险顾虑</li>
+<li><strong>弱化医生参与度</strong>：加强医助等角色来协助医生实现大部分功能，最好<strong>全权授权服务顾问</strong>进行处理</li>
+<li><strong>整合数字营销项目与EDC项目</strong>：让医助、患者录入一次系统后可以重复使用数据，<strong>减少用户操作流程，提高工作效率</strong>，达到获取患者数据的目的</li>
+</ol>
+</div><div class="article-licensing box"><div class="licensing-title"><p>关于患者管理项目用户调研</p><p><a href="https://huykkk.github.io/patient-management-user-research/">https://huykkk.github.io/patient-management-user-research/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>Huyk</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2026-05-15</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2026-05-19</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/B%E7%AB%AF%E4%BA%A7%E5%93%81/">B端产品</a><a class="link-muted mr-2" rel="tag" href="/tags/%E5%8C%BB%E7%96%97/">医疗</a><a class="link-muted mr-2" rel="tag" href="/tags/%E7%94%A8%E6%88%B7%E8%B0%83%E7%A0%94/">用户调研</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/erp-main-branch-auxiliary-methodology/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">以药房ERP为思考-理解主支辅异方法论</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/erp-product-analysis/"><span class="level-item">ERP系统业务总结（二）-产品分析</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3></div></div></div><!--!--><div class="column column-right is-4-tablet is-4-desktop is-4-widescreen  order-3 is-sticky"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/profile-modified.png" alt="Huyk"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Huyk</p><p class="is-size-6 is-block">🖥 PM</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Wuhan,China</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">17</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">4</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">12</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://weibo.com/huykkk" target="_blank" rel="noopener">关注我</a></div></div></div><!--!--><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/%E5%AD%A6%E4%B9%A0/"><span class="level-start"><span class="level-item">学习</span></span><span class="level-end"><span class="level-item tag">17</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E5%AD%A6%E4%B9%A0/%E4%BA%A7%E5%93%81/"><span class="level-start"><span class="level-item">产品</span></span><span class="level-end"><span class="level-item tag">12</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF/"><span class="level-start"><span class="level-item">前端</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%AD%A6%E4%B9%A0/%E7%9F%A5%E8%AF%86/"><span class="level-start"><span class="level-item">知识</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li></ul></li></ul></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-05-31T10:00:00.000Z">2026-05-31</time></p><p class="title"><a href="/medical-product-driven-upgrade/">产品力驱动医疗升级：如何让医院管理和患者体验双赢？</a></p><p class="categories"><a href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a> / <a href="/categories/%E5%AD%A6%E4%B9%A0/%E4%BA%A7%E5%93%81/">产品</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-05-14T16:00:00.000Z">2026-05-15</time></p><p class="title"><a href="/erp-main-branch-auxiliary-methodology/">以药房ERP为思考-理解主支辅异方法论</a></p><p class="categories"><a href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a> / <a href="/categories/%E5%AD%A6%E4%B9%A0/%E4%BA%A7%E5%93%81/">产品</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-05-14T16:00:00.000Z">2026-05-15</time></p><p class="title"><a href="/patient-management-user-research/">关于患者管理项目用户调研</a></p><p class="categories"><a href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a> / <a href="/categories/%E5%AD%A6%E4%B9%A0/%E4%BA%A7%E5%93%81/">产品</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-04-27T23:21:10.000Z">2024-04-28</time></p><p class="title"><a href="/erp-product-analysis/">ERP系统业务总结（二）-产品分析</a></p><p class="categories"><a href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a> / <a href="/categories/%E5%AD%A6%E4%B9%A0/%E4%BA%A7%E5%93%81/">产品</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-11-16T23:21:10.000Z">2021-11-17</time></p><p class="title"><a href="/2021/11/17/%E8%AF%BB%E3%80%8A%E9%87%91%E8%9E%8D%E7%9A%84%E8%B0%9C%E9%A2%98%E3%80%8B%E7%AC%94%E8%AE%B0/">读《金融的谜题》笔记</a></p><p class="categories"><a href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a> / <a href="/categories/%E5%AD%A6%E4%B9%A0/%E7%9F%A5%E8%AF%86/">知识</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2026/05/"><span class="level-start"><span class="level-item">五月 2026</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2024/04/"><span class="level-start"><span class="level-item">四月 2024</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/11/"><span class="level-start"><span class="level-item">十一月 2021</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/10/"><span class="level-start"><span class="level-item">十月 2021</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/09/"><span class="level-start"><span class="level-item">九月 2021</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/B%E7%AB%AF%E4%BA%A7%E5%93%81/"><span class="tag">B端产品</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ERP/"><span class="tag">ERP</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/markdown/"><span class="tag">markdown</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E4%BA%A7%E5%93%81/"><span class="tag">产品</span><span class="tag">7</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E4%BA%A7%E5%93%81%E8%AE%BE%E8%AE%A1/"><span class="tag">产品设计</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%89%8D%E7%AB%AF/"><span class="tag">前端</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%8C%BB%E7%96%97/"><span class="tag">医疗</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%8E%9F%E5%9E%8B/"><span class="tag">原型</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%94%A8%E6%88%B7%E8%B0%83%E7%A0%94/"><span class="tag">用户调研</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%AC%94%E8%AE%B0/"><span class="tag">笔记</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E8%AE%BE%E8%AE%A1/"><span class="tag">设计</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E9%87%91%E8%9E%8D/"><span class="tag">金融</span><span class="tag">2</span></a></div></div></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/Melogo.svg" alt="Huyk Blog - PM小白的快落小屋" height="28"></a><p class="is-size-7"><span>&copy; 2026 Huyk</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Hexo" href="https://hexo.io"><i class="fas fa-pencil-alt"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Icarus" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fas fa-paint-brush"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
