@@ -1,6 +1,6 @@
 ---
 title: ERP系统业务总结（二）-产品分析
-cover: /gallery/covers/erp.png
+cover: /gallery/covers/erp-product-analysis.png
 date: 2024-04-28 07:21:10
 permalink: erp-product-analysis/
 categories:

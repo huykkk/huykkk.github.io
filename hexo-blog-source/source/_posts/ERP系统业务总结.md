@@ -1,6 +1,6 @@
 ---
 title: ERP系统业务总结（一）-前言
-cover: /gallery/covers/erp.png
+cover: /gallery/covers/erp-overview.png
 date: 2021-10-27 07:21:10
 categories:
   - 学习
